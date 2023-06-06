@@ -5,10 +5,13 @@ specifiers:
   '@axel669/rollup-dollar-path': ^0.1.0
   '@axel669/rollup-html-input': ^0.1.2
   '@axel669/zephyr': ^*
+  '@ngneat/falso': ^6.4.0
   '@rollup/plugin-commonjs': ^24.1.0
   '@rollup/plugin-node-resolve': ^15.0.2
+  codemirror: ^5.65.13
   rollup: ^3.21.0
   rollup-plugin-delete: ^2.0.0
+  rollup-plugin-import-css: ^3.2.1
   rollup-plugin-svelte: ^7.1.4
   svelte: ^3.58.0
 
@@ -17,10 +20,13 @@ dependencies:
   '@axel669/rollup-dollar-path': 0.1.0
   '@axel669/rollup-html-input': 0.1.2
   '@axel669/zephyr': 0.1.17
+  '@ngneat/falso': 6.4.0
   '@rollup/plugin-commonjs': 24.1.0_rollup@3.23.0
   '@rollup/plugin-node-resolve': 15.1.0_rollup@3.23.0
+  codemirror: 5.65.13
   rollup: 3.23.0
   rollup-plugin-delete: 2.0.0
+  rollup-plugin-import-css: 3.2.1_rollup@3.23.0
   rollup-plugin-svelte: 7.1.5_sz7s4dmjv6zmjgdyx7w7zqtk6e
   svelte: 3.59.1
 
@@ -71,6 +77,13 @@ packages:
     hasBin: true
     dependencies:
       '@axel669/aegis': 0.2.7
+    dev: false
+
+  /@ngneat/falso/6.4.0:
+    resolution: {integrity: sha512-f6r036h2fX/AoHw1eV2t8+qWQwrbSrozs3zXMhhwoO7SJBc+DGMxRWEhFeYIinfwx0uhUH8ggx5+PDLzYESLOA==}
+    dependencies:
+      seedrandom: 3.0.5
+      uuid: 8.3.2
     dev: false
 
   /@nodelib/fs.scandir/2.1.5:
@@ -225,6 +238,10 @@ packages:
   /clean-stack/2.2.0:
     resolution: {integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==}
     engines: {node: '>=6'}
+    dev: false
+
+  /codemirror/5.65.13:
+    resolution: {integrity: sha512-SVWEzKXmbHmTQQWaz03Shrh4nybG0wXx2MEu3FO4ezbPW8IbnZEd5iGHGEffSUaitKYa3i+pHpBsSvw8sPHtzg==}
     dev: false
 
   /commondir/1.0.1:
@@ -610,6 +627,15 @@ packages:
       del: 5.1.0
     dev: false
 
+  /rollup-plugin-import-css/3.2.1_rollup@3.23.0:
+    resolution: {integrity: sha512-svr1JrBknT5ndEUM8nPaemTx/uF/5Tf4FAMQxvAYx2K9Sx7hL+JwB/rPuB1ZmUE1rjCnQHnz/fgik+noYM5+0w==}
+    peerDependencies:
+      rollup: ^2.x.x || ^3.x.x
+    dependencies:
+      '@rollup/pluginutils': 5.0.2_rollup@3.23.0
+      rollup: 3.23.0
+    dev: false
+
   /rollup-plugin-svelte/7.1.5_sz7s4dmjv6zmjgdyx7w7zqtk6e:
     resolution: {integrity: sha512-TXdtwPW/0wifaQvFf9SG36xbJYi8ok1AcSZe21u0vKcVrfc3JB7NOhwSWa9bQC3ltnBNsmNdga8bHqcnezzEug==}
     engines: {node: '>=10'}
@@ -637,6 +663,10 @@ packages:
       queue-microtask: 1.2.3
     dev: false
 
+  /seedrandom/3.0.5:
+    resolution: {integrity: sha512-8OwmbklUNzwezjGInmZ+2clQmExQPvomqjL7LFqOYqtmuxRgQYqOD3mHaU+MvZn5FLUeVxVfQjwLZW/n/JFuqg==}
+    dev: false
+
   /slash/3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
@@ -657,6 +687,11 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: false
+
+  /uuid/8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
     dev: false
 
   /wrappy/1.0.2:
